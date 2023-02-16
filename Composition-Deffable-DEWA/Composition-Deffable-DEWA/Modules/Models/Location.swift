@@ -30,6 +30,10 @@ struct Locations: Codable {
         self.waterSupply = try container.decodeIfPresent(PaymentLocations.self, forKey: .waterSupply)
         self.evCharge = try container.decodeIfPresent(EVCharge.self, forKey: .evCharge)
     }
+
+    func getCustomerServiceCenters() -> [CustomerServiceItem] {
+        return self.customerService?.item ?? []
+    }
 }
 
 // MARK: - CustomerService
@@ -38,7 +42,7 @@ struct CustomerService: Codable {
 }
 
 // MARK: - CustomerServiceItem
-struct CustomerServiceItem: Codable {
+struct CustomerServiceItem: Codable, Hashable {
     let id: Int?
     let code: String?
     let latitude, longitude: Double?
@@ -54,6 +58,30 @@ struct CustomerServiceItem: Codable {
     let businesscardlink: String?
     let image, map: String?
   //  let services: Services?
+
+    static func == (lhs: CustomerServiceItem, rhs: CustomerServiceItem) -> Bool {
+        lhs.id == rhs.id
+    }
+
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
+}
+
+extension CustomerServiceItem {
+    var titleValue: String {
+        return title ?? ""
+    }
+
+    var addressValue: String {
+        return address ?? ""
+    }
+
+    var distance: String {
+        return "Distance not calculated"
+    }
+
+
 }
 
 // MARK: - Services
@@ -67,7 +95,7 @@ struct EVCharge: Codable {
 }
 
 // MARK: - EVChargeItem
-struct EVChargeItem: Codable {
+struct EVChargeItem: Codable, Hashable {
     let id: Int?
     let code, name, catg: String?
     let address: String?
@@ -83,6 +111,14 @@ struct EVChargeItem: Codable {
     let web: String?
     let wname: String?
     let ctype: String?
+
+    static func == (lhs: EVChargeItem, rhs: EVChargeItem) -> Bool {
+        lhs.id == rhs.id
+    }
+
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
 }
 
 
@@ -92,7 +128,7 @@ struct PaymentLocations: Codable {
 }
 
 // MARK: - PaymentLocationsItem
-struct PaymentLocationsItem: Codable {
+struct PaymentLocationsItem: Codable, Hashable {
     let id: Int?
     let catg: String?
     let lat, lon: Double?
@@ -105,4 +141,12 @@ struct PaymentLocationsItem: Codable {
     let phone: String?
     let web: String?
     let wname: String?
+
+    static func == (lhs: PaymentLocationsItem, rhs: PaymentLocationsItem) -> Bool {
+        lhs.id == rhs.id
+    }
+
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
 }

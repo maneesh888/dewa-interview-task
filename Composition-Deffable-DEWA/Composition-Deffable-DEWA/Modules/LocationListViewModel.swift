@@ -7,15 +7,34 @@
 
 import Foundation
 
+import Combine
+
+enum HomeSection: CaseIterable {
+    case customerService
+    case paymentLocations
+    case waterSupply
+    case evCharging
+}
+
 protocol LocationServiceable {
-    func getAllLocation() async -> Result<Locations, RequestError>
+    var currentSections: [HomeSection] { get set }
+    func getAllLocation() async
 }
 
 
 class LocationListViewModel: HTTPClient, LocationServiceable {
-    func getAllLocation() async -> Result<Locations, RequestError> {
-        return await sendRequest(endpoint: LocationEndpoint.getAll, responseModel: Locations.self)
+    @Published var customerServiceLocations: [CustomerServiceItem] = []
+    var currentSections: [HomeSection] = [.customerService]
+    func getAllLocation() async {
+        let result = await sendRequest(endpoint: LocationEndpoint.getAll, responseModel: Locations.self)
+        switch result {
+        case .success(let locationData):
+            customerServiceLocations = locationData.getCustomerServiceCenters()
+        case .failure(let error):
+            print(error)
+        }
     }
 
 
 }
+

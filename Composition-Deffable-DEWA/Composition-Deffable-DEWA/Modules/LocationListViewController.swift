@@ -6,36 +6,26 @@
 //
 
 import UIKit
+import Combine
 
 class LocationListViewController: BaseViewController {
     
     var viewModel: LocationServiceable = LocationListViewModel()
+    var subscriptions = Set<AnyCancellable>()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
+        loadData()
+    }
+
+
+    private func loadData() {
         Task {
-           let result = await viewModel.getAllLocation()
-            switch result {
-            case .success(let data):
-                print(data)
-            case .failure(let error):
-                print(error)
-            }
+            await viewModel.getAllLocation()
         }
+
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
