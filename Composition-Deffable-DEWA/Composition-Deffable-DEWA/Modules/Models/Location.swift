@@ -6,8 +6,6 @@
 //
 
 import Foundation
-
-import Foundation
 import XMLParsing
 
 // MARK: - Locations
@@ -68,7 +66,7 @@ struct CustomerServiceItem: Codable, Hashable {
     }
 }
 
-extension CustomerServiceItem {
+extension CustomerServiceItem: Listable {
     var titleValue: String {
         return title ?? ""
     }
