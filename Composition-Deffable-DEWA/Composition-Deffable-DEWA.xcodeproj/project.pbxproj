@@ -16,6 +16,10 @@
 		9FA5125A299E0DF100EE7049 /* Composition_Deffable_DEWATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA51259299E0DF100EE7049 /* Composition_Deffable_DEWATests.swift */; };
 		9FA51264299E0DF100EE7049 /* Composition_Deffable_DEWAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA51263299E0DF100EE7049 /* Composition_Deffable_DEWAUITests.swift */; };
 		9FA51266299E0DF100EE7049 /* Composition_Deffable_DEWAUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA51265299E0DF100EE7049 /* Composition_Deffable_DEWAUITestsLaunchTests.swift */; };
+		9FA51277299E129100EE7049 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA51276299E129100EE7049 /* ViewControllerFactory.swift */; };
+		9FA5127A299E12E100EE7049 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA51278299E12E100EE7049 /* HomeViewController.swift */; };
+		9FA5127B299E12E100EE7049 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FA51279299E12E100EE7049 /* HomeViewController.xib */; };
+		9FA5127D299E140400EE7049 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA5127C299E140400EE7049 /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		9FA5125F299E0DF100EE7049 /* Composition-Deffable-DEWAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Composition-Deffable-DEWAUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FA51263299E0DF100EE7049 /* Composition_Deffable_DEWAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Composition_Deffable_DEWAUITests.swift; sourceTree = "<group>"; };
 		9FA51265299E0DF100EE7049 /* Composition_Deffable_DEWAUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Composition_Deffable_DEWAUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9FA51276299E129100EE7049 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
+		9FA51278299E12E100EE7049 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		9FA51279299E12E100EE7049 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		9FA5127C299E140400EE7049 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,9 @@
 		9FA51241299E0DEE00EE7049 /* Composition-Deffable-DEWA */ = {
 			isa = PBXGroup;
 			children = (
+				9FA51275299E122E00EE7049 /* Base */,
+				9FA51274299E122500EE7049 /* Modules */,
+				9FA51273299E121800EE7049 /* Utils */,
 				9FA51242299E0DEE00EE7049 /* AppDelegate.swift */,
 				9FA51244299E0DEE00EE7049 /* SceneDelegate.swift */,
 				9FA51246299E0DEE00EE7049 /* ViewController.swift */,
@@ -125,6 +136,31 @@
 				9FA51265299E0DF100EE7049 /* Composition_Deffable_DEWAUITestsLaunchTests.swift */,
 			);
 			path = "Composition-Deffable-DEWAUITests";
+			sourceTree = "<group>";
+		};
+		9FA51273299E121800EE7049 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9FA51276299E129100EE7049 /* ViewControllerFactory.swift */,
+				9FA5127C299E140400EE7049 /* LocationManager.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		9FA51274299E122500EE7049 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				9FA51278299E12E100EE7049 /* HomeViewController.swift */,
+				9FA51279299E12E100EE7049 /* HomeViewController.xib */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		9FA51275299E122E00EE7049 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +271,7 @@
 				9FA5124F299E0DF000EE7049 /* LaunchScreen.storyboard in Resources */,
 				9FA5124C299E0DF000EE7049 /* Assets.xcassets in Resources */,
 				9FA5124A299E0DEE00EE7049 /* Main.storyboard in Resources */,
+				9FA5127B299E12E100EE7049 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,7 +307,8 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "
+";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -279,7 +317,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FA5127A299E12E100EE7049 /* HomeViewController.swift in Sources */,
 				9FA51247299E0DEE00EE7049 /* ViewController.swift in Sources */,
+				9FA5127D299E140400EE7049 /* LocationManager.swift in Sources */,
+				9FA51277299E129100EE7049 /* ViewControllerFactory.swift in Sources */,
 				9FA51243299E0DEE00EE7049 /* AppDelegate.swift in Sources */,
 				9FA51245299E0DEE00EE7049 /* SceneDelegate.swift in Sources */,
 			);
