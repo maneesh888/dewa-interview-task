@@ -30,8 +30,8 @@ class BaseViewController: UIViewController {
     
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
             super.traitCollectionDidChange(previousTraitCollection)
-        let theme: Theme = isDarkModeEnabled ? DarkTheme() : LightTheme()
-        view.applyTheme(theme)
+      //  let theme: Theme = isDarkModeEnabled ? DarkTheme() : LightTheme()
+      //  view.applyTheme(theme)
         }
 }
 

@@ -8,9 +8,9 @@
 import Foundation
 
 struct ViewControllerFactory {
-    static func getHomeScreen()-> HomeViewController {
-        let vc = HomeViewController(nibName: "HomeViewController", bundle: nil)
-        return HomeViewController()
+    static func getLocationListVC()-> LocationListViewController {
+        let vc = LocationListViewController(nibName: "LocationListViewController", bundle: nil)
+        return vc
     }
 }
 

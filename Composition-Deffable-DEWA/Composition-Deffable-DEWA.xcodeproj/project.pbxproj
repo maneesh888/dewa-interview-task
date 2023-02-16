@@ -16,8 +16,8 @@
 		9FA51264299E0DF100EE7049 /* Composition_Deffable_DEWAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA51263299E0DF100EE7049 /* Composition_Deffable_DEWAUITests.swift */; };
 		9FA51266299E0DF100EE7049 /* Composition_Deffable_DEWAUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA51265299E0DF100EE7049 /* Composition_Deffable_DEWAUITestsLaunchTests.swift */; };
 		9FA51277299E129100EE7049 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA51276299E129100EE7049 /* ViewControllerFactory.swift */; };
-		9FA5127A299E12E100EE7049 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA51278299E12E100EE7049 /* HomeViewController.swift */; };
-		9FA5127B299E12E100EE7049 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FA51279299E12E100EE7049 /* HomeViewController.xib */; };
+		9FA5127A299E12E100EE7049 /* LocationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA51278299E12E100EE7049 /* LocationListViewController.swift */; };
+		9FA5127B299E12E100EE7049 /* LocationListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FA51279299E12E100EE7049 /* LocationListViewController.xib */; };
 		9FA5127D299E140400EE7049 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA5127C299E140400EE7049 /* LocationManager.swift */; };
 		9FA5127F299E19E400EE7049 /* ColorUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA5127E299E19E400EE7049 /* ColorUtil.swift */; };
 		9FA51281299E1AF400EE7049 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA51280299E1AF400EE7049 /* BaseViewController.swift */; };
@@ -26,6 +26,9 @@
 		9FA51289299E276600EE7049 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA51285299E276600EE7049 /* Endpoint.swift */; };
 		9FA5128A299E276600EE7049 /* RequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA51286299E276600EE7049 /* RequestMethod.swift */; };
 		9FA5128D299E27A500EE7049 /* LocationEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA5128C299E27A400EE7049 /* LocationEndpoint.swift */; };
+		9FA51290299E284A00EE7049 /* XMLParsing in Frameworks */ = {isa = PBXBuildFile; productRef = 9FA5128F299E284A00EE7049 /* XMLParsing */; };
+		9FA51292299E2B3D00EE7049 /* LocationListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA51291299E2B3D00EE7049 /* LocationListViewModel.swift */; };
+		9FA51295299E2BA500EE7049 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA51294299E2BA500EE7049 /* Location.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,8 +62,8 @@
 		9FA51263299E0DF100EE7049 /* Composition_Deffable_DEWAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Composition_Deffable_DEWAUITests.swift; sourceTree = "<group>"; };
 		9FA51265299E0DF100EE7049 /* Composition_Deffable_DEWAUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Composition_Deffable_DEWAUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9FA51276299E129100EE7049 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
-		9FA51278299E12E100EE7049 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		9FA51279299E12E100EE7049 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		9FA51278299E12E100EE7049 /* LocationListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListViewController.swift; sourceTree = "<group>"; };
+		9FA51279299E12E100EE7049 /* LocationListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationListViewController.xib; sourceTree = "<group>"; };
 		9FA5127C299E140400EE7049 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		9FA5127E299E19E400EE7049 /* ColorUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorUtil.swift; sourceTree = "<group>"; };
 		9FA51280299E1AF400EE7049 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +72,8 @@
 		9FA51285299E276600EE7049 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		9FA51286299E276600EE7049 /* RequestMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestMethod.swift; sourceTree = "<group>"; };
 		9FA5128C299E27A400EE7049 /* LocationEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationEndpoint.swift; sourceTree = "<group>"; };
+		9FA51291299E2B3D00EE7049 /* LocationListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListViewModel.swift; sourceTree = "<group>"; };
+		9FA51294299E2BA500EE7049 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FA51290299E284A00EE7049 /* XMLParsing in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,8 +169,10 @@
 		9FA51274299E122500EE7049 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				9FA51278299E12E100EE7049 /* HomeViewController.swift */,
-				9FA51279299E12E100EE7049 /* HomeViewController.xib */,
+				9FA51293299E2B9B00EE7049 /* Models */,
+				9FA51278299E12E100EE7049 /* LocationListViewController.swift */,
+				9FA51279299E12E100EE7049 /* LocationListViewController.xib */,
+				9FA51291299E2B3D00EE7049 /* LocationListViewModel.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -197,6 +205,14 @@
 			path = Requests;
 			sourceTree = "<group>";
 		};
+		9FA51293299E2B9B00EE7049 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9FA51294299E2BA500EE7049 /* Location.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -214,6 +230,9 @@
 			dependencies = (
 			);
 			name = "Composition-Deffable-DEWA";
+			packageProductDependencies = (
+				9FA5128F299E284A00EE7049 /* XMLParsing */,
+			);
 			productName = "Composition-Deffable-DEWA";
 			productReference = 9FA5123F299E0DEE00EE7049 /* Composition-Deffable-DEWA.app */;
 			productType = "com.apple.product-type.application";
@@ -286,6 +305,9 @@
 				Base,
 			);
 			mainGroup = 9FA51236299E0DEE00EE7049;
+			packageReferences = (
+				9FA5128E299E284A00EE7049 /* XCRemoteSwiftPackageReference "XMLParsing" */,
+			);
 			productRefGroup = 9FA51240299E0DEE00EE7049 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -305,7 +327,7 @@
 				9FA5124F299E0DF000EE7049 /* LaunchScreen.storyboard in Resources */,
 				9FA5124C299E0DF000EE7049 /* Assets.xcassets in Resources */,
 				9FA5124A299E0DEE00EE7049 /* Main.storyboard in Resources */,
-				9FA5127B299E12E100EE7049 /* HomeViewController.xib in Resources */,
+				9FA5127B299E12E100EE7049 /* LocationListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,17 +373,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FA5127A299E12E100EE7049 /* HomeViewController.swift in Sources */,
+				9FA5127A299E12E100EE7049 /* LocationListViewController.swift in Sources */,
 				9FA5127D299E140400EE7049 /* LocationManager.swift in Sources */,
 				9FA51287299E276600EE7049 /* HTTPClient.swift in Sources */,
 				9FA5128D299E27A500EE7049 /* LocationEndpoint.swift in Sources */,
 				9FA51277299E129100EE7049 /* ViewControllerFactory.swift in Sources */,
 				9FA51289299E276600EE7049 /* Endpoint.swift in Sources */,
+				9FA51295299E2BA500EE7049 /* Location.swift in Sources */,
 				9FA5128A299E276600EE7049 /* RequestMethod.swift in Sources */,
 				9FA5127F299E19E400EE7049 /* ColorUtil.swift in Sources */,
 				9FA51243299E0DEE00EE7049 /* AppDelegate.swift in Sources */,
 				9FA51281299E1AF400EE7049 /* BaseViewController.swift in Sources */,
 				9FA51245299E0DEE00EE7049 /* SceneDelegate.swift in Sources */,
+				9FA51292299E2B3D00EE7049 /* LocationListViewModel.swift in Sources */,
 				9FA51288299E276600EE7049 /* RequestError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -698,6 +722,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9FA5128E299E284A00EE7049 /* XCRemoteSwiftPackageReference "XMLParsing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ShawnMoore/XMLParsing";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9FA5128F299E284A00EE7049 /* XMLParsing */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9FA5128E299E284A00EE7049 /* XCRemoteSwiftPackageReference "XMLParsing" */;
+			productName = XMLParsing;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9FA51237299E0DEE00EE7049 /* Project object */;
 }

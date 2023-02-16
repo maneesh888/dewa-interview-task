@@ -7,12 +7,24 @@
 
 import UIKit
 
-class HomeViewController: BaseViewController {
-
+class LocationListViewController: BaseViewController {
+    
+    var viewModel: LocationServiceable = LocationListViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        Task {
+           let result = await viewModel.getAllLocation()
+            switch result {
+            case .success(let data):
+                print(data)
+            case .failure(let error):
+                print(error)
+            }
+        }
     }
 
 
