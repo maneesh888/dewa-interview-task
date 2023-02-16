@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9FA51243299E0DEE00EE7049 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA51242299E0DEE00EE7049 /* AppDelegate.swift */; };
+		9FA51245299E0DEE00EE7049 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA51244299E0DEE00EE7049 /* SceneDelegate.swift */; };
+		9FA51247299E0DEE00EE7049 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA51246299E0DEE00EE7049 /* ViewController.swift */; };
+		9FA5124A299E0DEE00EE7049 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FA51248299E0DEE00EE7049 /* Main.storyboard */; };
+		9FA5124C299E0DF000EE7049 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FA5124B299E0DF000EE7049 /* Assets.xcassets */; };
+		9FA5124F299E0DF000EE7049 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FA5124D299E0DF000EE7049 /* LaunchScreen.storyboard */; };
+		9FA5125A299E0DF100EE7049 /* Composition_Deffable_DEWATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA51259299E0DF100EE7049 /* Composition_Deffable_DEWATests.swift */; };
+		9FA51264299E0DF100EE7049 /* Composition_Deffable_DEWAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA51263299E0DF100EE7049 /* Composition_Deffable_DEWAUITests.swift */; };
+		9FA51266299E0DF100EE7049 /* Composition_Deffable_DEWAUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA51265299E0DF100EE7049 /* Composition_Deffable_DEWAUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9FA51256299E0DF100EE7049 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FA51237299E0DEE00EE7049 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FA5123E299E0DEE00EE7049;
+			remoteInfo = "Composition-Deffable-DEWA";
+		};
+		9FA51260299E0DF100EE7049 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FA51237299E0DEE00EE7049 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FA5123E299E0DEE00EE7049;
+			remoteInfo = "Composition-Deffable-DEWA";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9FA5123F299E0DEE00EE7049 /* Composition-Deffable-DEWA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Composition-Deffable-DEWA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FA51242299E0DEE00EE7049 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9FA51244299E0DEE00EE7049 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9FA51246299E0DEE00EE7049 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9FA51249299E0DEE00EE7049 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9FA5124B299E0DF000EE7049 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9FA5124E299E0DF000EE7049 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9FA51250299E0DF000EE7049 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FA51255299E0DF100EE7049 /* Composition-Deffable-DEWATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Composition-Deffable-DEWATests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FA51259299E0DF100EE7049 /* Composition_Deffable_DEWATests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Composition_Deffable_DEWATests.swift; sourceTree = "<group>"; };
+		9FA5125F299E0DF100EE7049 /* Composition-Deffable-DEWAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Composition-Deffable-DEWAUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FA51263299E0DF100EE7049 /* Composition_Deffable_DEWAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Composition_Deffable_DEWAUITests.swift; sourceTree = "<group>"; };
+		9FA51265299E0DF100EE7049 /* Composition_Deffable_DEWAUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Composition_Deffable_DEWAUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9FA5123C299E0DEE00EE7049 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FA51252299E0DF100EE7049 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FA5125C299E0DF100EE7049 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9FA51236299E0DEE00EE7049 = {
+			isa = PBXGroup;
+			children = (
+				9FA51241299E0DEE00EE7049 /* Composition-Deffable-DEWA */,
+				9FA51258299E0DF100EE7049 /* Composition-Deffable-DEWATests */,
+				9FA51262299E0DF100EE7049 /* Composition-Deffable-DEWAUITests */,
+				9FA51240299E0DEE00EE7049 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9FA51240299E0DEE00EE7049 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9FA5123F299E0DEE00EE7049 /* Composition-Deffable-DEWA.app */,
+				9FA51255299E0DF100EE7049 /* Composition-Deffable-DEWATests.xctest */,
+				9FA5125F299E0DF100EE7049 /* Composition-Deffable-DEWAUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9FA51241299E0DEE00EE7049 /* Composition-Deffable-DEWA */ = {
+			isa = PBXGroup;
+			children = (
+				9FA51242299E0DEE00EE7049 /* AppDelegate.swift */,
+				9FA51244299E0DEE00EE7049 /* SceneDelegate.swift */,
+				9FA51246299E0DEE00EE7049 /* ViewController.swift */,
+				9FA51248299E0DEE00EE7049 /* Main.storyboard */,
+				9FA5124B299E0DF000EE7049 /* Assets.xcassets */,
+				9FA5124D299E0DF000EE7049 /* LaunchScreen.storyboard */,
+				9FA51250299E0DF000EE7049 /* Info.plist */,
+			);
+			path = "Composition-Deffable-DEWA";
+			sourceTree = "<group>";
+		};
+		9FA51258299E0DF100EE7049 /* Composition-Deffable-DEWATests */ = {
+			isa = PBXGroup;
+			children = (
+				9FA51259299E0DF100EE7049 /* Composition_Deffable_DEWATests.swift */,
+			);
+			path = "Composition-Deffable-DEWATests";
+			sourceTree = "<group>";
+		};
+		9FA51262299E0DF100EE7049 /* Composition-Deffable-DEWAUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9FA51263299E0DF100EE7049 /* Composition_Deffable_DEWAUITests.swift */,
+				9FA51265299E0DF100EE7049 /* Composition_Deffable_DEWAUITestsLaunchTests.swift */,
+			);
+			path = "Composition-Deffable-DEWAUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9FA5123E299E0DEE00EE7049 /* Composition-Deffable-DEWA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FA51269299E0DF100EE7049 /* Build configuration list for PBXNativeTarget "Composition-Deffable-DEWA" */;
+			buildPhases = (
+				9FA5123B299E0DEE00EE7049 /* Sources */,
+				9FA5123C299E0DEE00EE7049 /* Frameworks */,
+				9FA5123D299E0DEE00EE7049 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Composition-Deffable-DEWA";
+			productName = "Composition-Deffable-DEWA";
+			productReference = 9FA5123F299E0DEE00EE7049 /* Composition-Deffable-DEWA.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9FA51254299E0DF100EE7049 /* Composition-Deffable-DEWATests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FA5126C299E0DF100EE7049 /* Build configuration list for PBXNativeTarget "Composition-Deffable-DEWATests" */;
+			buildPhases = (
+				9FA51251299E0DF100EE7049 /* Sources */,
+				9FA51252299E0DF100EE7049 /* Frameworks */,
+				9FA51253299E0DF100EE7049 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9FA51257299E0DF100EE7049 /* PBXTargetDependency */,
+			);
+			name = "Composition-Deffable-DEWATests";
+			productName = "Composition-Deffable-DEWATests";
+			productReference = 9FA51255299E0DF100EE7049 /* Composition-Deffable-DEWATests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9FA5125E299E0DF100EE7049 /* Composition-Deffable-DEWAUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FA5126F299E0DF100EE7049 /* Build configuration list for PBXNativeTarget "Composition-Deffable-DEWAUITests" */;
+			buildPhases = (
+				9FA5125B299E0DF100EE7049 /* Sources */,
+				9FA5125C299E0DF100EE7049 /* Frameworks */,
+				9FA5125D299E0DF100EE7049 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9FA51261299E0DF100EE7049 /* PBXTargetDependency */,
+			);
+			name = "Composition-Deffable-DEWAUITests";
+			productName = "Composition-Deffable-DEWAUITests";
+			productReference = 9FA5125F299E0DF100EE7049 /* Composition-Deffable-DEWAUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9FA51237299E0DEE00EE7049 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					9FA5123E299E0DEE00EE7049 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					9FA51254299E0DF100EE7049 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 9FA5123E299E0DEE00EE7049;
+					};
+					9FA5125E299E0DF100EE7049 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 9FA5123E299E0DEE00EE7049;
+					};
+				};
+			};
+			buildConfigurationList = 9FA5123A299E0DEE00EE7049 /* Build configuration list for PBXProject "Composition-Deffable-DEWA" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9FA51236299E0DEE00EE7049;
+			productRefGroup = 9FA51240299E0DEE00EE7049 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9FA5123E299E0DEE00EE7049 /* Composition-Deffable-DEWA */,
+				9FA51254299E0DF100EE7049 /* Composition-Deffable-DEWATests */,
+				9FA5125E299E0DF100EE7049 /* Composition-Deffable-DEWAUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9FA5123D299E0DEE00EE7049 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FA5124F299E0DF000EE7049 /* LaunchScreen.storyboard in Resources */,
+				9FA5124C299E0DF000EE7049 /* Assets.xcassets in Resources */,
+				9FA5124A299E0DEE00EE7049 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FA51253299E0DF100EE7049 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FA5125D299E0DF100EE7049 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9FA5123B299E0DEE00EE7049 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FA51247299E0DEE00EE7049 /* ViewController.swift in Sources */,
+				9FA51243299E0DEE00EE7049 /* AppDelegate.swift in Sources */,
+				9FA51245299E0DEE00EE7049 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FA51251299E0DF100EE7049 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FA5125A299E0DF100EE7049 /* Composition_Deffable_DEWATests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FA5125B299E0DF100EE7049 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FA51264299E0DF100EE7049 /* Composition_Deffable_DEWAUITests.swift in Sources */,
+				9FA51266299E0DF100EE7049 /* Composition_Deffable_DEWAUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9FA51257299E0DF100EE7049 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9FA5123E299E0DEE00EE7049 /* Composition-Deffable-DEWA */;
+			targetProxy = 9FA51256299E0DF100EE7049 /* PBXContainerItemProxy */;
+		};
+		9FA51261299E0DF100EE7049 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9FA5123E299E0DEE00EE7049 /* Composition-Deffable-DEWA */;
+			targetProxy = 9FA51260299E0DF100EE7049 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9FA51248299E0DEE00EE7049 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9FA51249299E0DEE00EE7049 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9FA5124D299E0DF000EE7049 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9FA5124E299E0DF000EE7049 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9FA51267299E0DF100EE7049 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9FA51268299E0DF100EE7049 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9FA5126A299E0DF100EE7049 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Composition-Deffable-DEWA/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.learning.Composition-Deffable-DEWA";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9FA5126B299E0DF100EE7049 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Composition-Deffable-DEWA/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.learning.Composition-Deffable-DEWA";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9FA5126D299E0DF100EE7049 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.learning.Composition-Deffable-DEWATests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Composition-Deffable-DEWA.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Composition-Deffable-DEWA";
+			};
+			name = Debug;
+		};
+		9FA5126E299E0DF100EE7049 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.learning.Composition-Deffable-DEWATests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Composition-Deffable-DEWA.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Composition-Deffable-DEWA";
+			};
+			name = Release;
+		};
+		9FA51270299E0DF100EE7049 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.learning.Composition-Deffable-DEWAUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Composition-Deffable-DEWA";
+			};
+			name = Debug;
+		};
+		9FA51271299E0DF100EE7049 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.learning.Composition-Deffable-DEWAUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Composition-Deffable-DEWA";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9FA5123A299E0DEE00EE7049 /* Build configuration list for PBXProject "Composition-Deffable-DEWA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FA51267299E0DF100EE7049 /* Debug */,
+				9FA51268299E0DF100EE7049 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FA51269299E0DF100EE7049 /* Build configuration list for PBXNativeTarget "Composition-Deffable-DEWA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FA5126A299E0DF100EE7049 /* Debug */,
+				9FA5126B299E0DF100EE7049 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FA5126C299E0DF100EE7049 /* Build configuration list for PBXNativeTarget "Composition-Deffable-DEWATests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FA5126D299E0DF100EE7049 /* Debug */,
+				9FA5126E299E0DF100EE7049 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FA5126F299E0DF100EE7049 /* Build configuration list for PBXNativeTarget "Composition-Deffable-DEWAUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FA51270299E0DF100EE7049 /* Debug */,
+				9FA51271299E0DF100EE7049 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9FA51237299E0DEE00EE7049 /* Project object */;
+}
