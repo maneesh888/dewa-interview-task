@@ -13,6 +13,14 @@ class AppTabBarViewController: UITabBarController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        let locationsListVC = ViewControllerFactory.getLocationList()
+        locationsListVC.tabBarItem = UITabBarItem(tabBarSystemItem: .topRated, tag: 0)
+
+        let officeListVC = ViewControllerFactory.getOfficeList()
+            officeListVC.tabBarItem = UITabBarItem(tabBarSystemItem: .recents, tag: 1)
+
+            viewControllers = [locationsListVC, officeListVC ]
     }
 
 

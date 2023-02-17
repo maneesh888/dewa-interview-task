@@ -12,7 +12,6 @@
 		9F56D226299F87AA009F798D /* OfficeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F56D225299F87AA009F798D /* OfficeListViewModel.swift */; };
 		9F56D229299F87DA009F798D /* OfficeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F56D228299F87DA009F798D /* OfficeModels.swift */; };
 		9F56D22C299F8A52009F798D /* AppTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F56D22A299F8A52009F798D /* AppTabBarViewController.swift */; };
-		9F56D22D299F8A52009F798D /* AppTabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F56D22B299F8A52009F798D /* AppTabBarViewController.xib */; };
 		9F56D231299F9C0E009F798D /* OfficeLocationCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F56D22F299F9C0E009F798D /* OfficeLocationCollectionViewCell.swift */; };
 		9F56D232299F9C0E009F798D /* OfficeLocationCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F56D230299F9C0E009F798D /* OfficeLocationCollectionViewCell.xib */; };
 		9F70DFFA299E9095008D97A9 /* CustomerServiceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F70DFF8299E9095008D97A9 /* CustomerServiceCollectionViewCell.swift */; };
@@ -64,7 +63,6 @@
 		9F56D225299F87AA009F798D /* OfficeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficeListViewModel.swift; sourceTree = "<group>"; };
 		9F56D228299F87DA009F798D /* OfficeModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficeModels.swift; sourceTree = "<group>"; };
 		9F56D22A299F8A52009F798D /* AppTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabBarViewController.swift; sourceTree = "<group>"; };
-		9F56D22B299F8A52009F798D /* AppTabBarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppTabBarViewController.xib; sourceTree = "<group>"; };
 		9F56D22F299F9C0E009F798D /* OfficeLocationCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficeLocationCollectionViewCell.swift; sourceTree = "<group>"; };
 		9F56D230299F9C0E009F798D /* OfficeLocationCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OfficeLocationCollectionViewCell.xib; sourceTree = "<group>"; };
 		9F70DFF8299E9095008D97A9 /* CustomerServiceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerServiceCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -155,7 +153,6 @@
 			isa = PBXGroup;
 			children = (
 				9F56D22A299F8A52009F798D /* AppTabBarViewController.swift */,
-				9F56D22B299F8A52009F798D /* AppTabBarViewController.xib */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -402,7 +399,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F56D22D299F8A52009F798D /* AppTabBarViewController.xib in Resources */,
 				9F56D232299F9C0E009F798D /* OfficeLocationCollectionViewCell.xib in Resources */,
 				9F56D224299F876E009F798D /* OfficeListViewController.xib in Resources */,
 				9FA5124F299E0DF000EE7049 /* LaunchScreen.storyboard in Resources */,
