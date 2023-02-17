@@ -10,7 +10,7 @@ import Foundation
 struct ViewControllerFactory {
     static func getLocationListVC()-> LocationListViewController {
         let vc = LocationListViewController(nibName: "LocationListViewController", bundle: nil)
-        vc.viewModel = LocationListViewModel()
+        vc.viewModel = LocationListViewModel(locationManager: CoreLocationManager())
         return vc
     }
 }

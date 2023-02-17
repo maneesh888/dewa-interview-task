@@ -7,6 +7,7 @@
 
 import Foundation
 import Combine
+import CoreLocation
 
 enum HomeSection: CaseIterable {
     case customerService
@@ -22,7 +23,19 @@ protocol LocationServiceable {
 
 
 class LocationListViewModel: HTTPClient, LocationServiceable {
+    
     @Published var customerServiceLocations: [CustomerServiceItem] = []
+    @Published var userLocation: CLLocation? {
+        didSet {
+            sort()
+        }
+    }
+    
+    private let locationManager:CoreLocationManager
+    init(locationManager:CoreLocationManager) {
+        self.locationManager = locationManager
+    }
+    
     var currentSections: [HomeSection] = [.customerService]
     func getAllLocation() async {
         let result = await sendRequest(endpoint: LocationEndpoint.getAll, responseModel: Locations.self)
@@ -33,7 +46,24 @@ class LocationListViewModel: HTTPClient, LocationServiceable {
             print(error)
         }
     }
+    
+    func requestForDeviceLocation() {
+        locationManager.currentLocation
+                    .map { location in
+                        guard let location = location else {
+                            return nil
+                            
+                        }
+                        let coordinate = location
+                        return coordinate
+                    }
+                    .assign(to: &$userLocation)
+        locationManager.requestLocationAuthorization()
+    }
 
+    func sort() {
+        
+    }
 
 }
 

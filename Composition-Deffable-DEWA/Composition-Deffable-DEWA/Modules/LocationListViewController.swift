@@ -27,6 +27,7 @@ class LocationListViewController: BaseViewController {
         bindData()
         setCollectionView()
         loadData()
+        viewModel.requestForDeviceLocation()
         
     }
     
