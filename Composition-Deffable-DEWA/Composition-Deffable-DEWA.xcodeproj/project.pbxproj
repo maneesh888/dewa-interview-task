@@ -13,6 +13,8 @@
 		9F56D229299F87DA009F798D /* OfficeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F56D228299F87DA009F798D /* OfficeModels.swift */; };
 		9F56D22C299F8A52009F798D /* AppTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F56D22A299F8A52009F798D /* AppTabBarViewController.swift */; };
 		9F56D22D299F8A52009F798D /* AppTabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F56D22B299F8A52009F798D /* AppTabBarViewController.xib */; };
+		9F56D231299F9C0E009F798D /* OfficeLocationCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F56D22F299F9C0E009F798D /* OfficeLocationCollectionViewCell.swift */; };
+		9F56D232299F9C0E009F798D /* OfficeLocationCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F56D230299F9C0E009F798D /* OfficeLocationCollectionViewCell.xib */; };
 		9F70DFFA299E9095008D97A9 /* CustomerServiceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F70DFF8299E9095008D97A9 /* CustomerServiceCollectionViewCell.swift */; };
 		9F70DFFB299E9095008D97A9 /* CustomerServiceCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F70DFF9299E9095008D97A9 /* CustomerServiceCollectionViewCell.xib */; };
 		9FA51243299E0DEE00EE7049 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA51242299E0DEE00EE7049 /* AppDelegate.swift */; };
@@ -63,6 +65,8 @@
 		9F56D228299F87DA009F798D /* OfficeModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficeModels.swift; sourceTree = "<group>"; };
 		9F56D22A299F8A52009F798D /* AppTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabBarViewController.swift; sourceTree = "<group>"; };
 		9F56D22B299F8A52009F798D /* AppTabBarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppTabBarViewController.xib; sourceTree = "<group>"; };
+		9F56D22F299F9C0E009F798D /* OfficeLocationCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficeLocationCollectionViewCell.swift; sourceTree = "<group>"; };
+		9F56D230299F9C0E009F798D /* OfficeLocationCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OfficeLocationCollectionViewCell.xib; sourceTree = "<group>"; };
 		9F70DFF8299E9095008D97A9 /* CustomerServiceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerServiceCollectionViewCell.swift; sourceTree = "<group>"; };
 		9F70DFF9299E9095008D97A9 /* CustomerServiceCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomerServiceCollectionViewCell.xib; sourceTree = "<group>"; };
 		9FA5123F299E0DEE00EE7049 /* Composition-Deffable-DEWA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Composition-Deffable-DEWA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,6 +125,8 @@
 		9F56D21F299F8734009F798D /* OffilceList */ = {
 			isa = PBXGroup;
 			children = (
+				9F56D227299F87CE009F798D /* Models */,
+				9F56D233299F9C15009F798D /* Cells */,
 				9F56D221299F876E009F798D /* OfficeListViewController.swift */,
 				9F56D222299F876E009F798D /* OfficeListViewController.xib */,
 				9F56D225299F87AA009F798D /* OfficeListViewModel.swift */,
@@ -152,6 +158,15 @@
 				9F56D22B299F8A52009F798D /* AppTabBarViewController.xib */,
 			);
 			path = TabBar;
+			sourceTree = "<group>";
+		};
+		9F56D233299F9C15009F798D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9F56D22F299F9C0E009F798D /* OfficeLocationCollectionViewCell.swift */,
+				9F56D230299F9C0E009F798D /* OfficeLocationCollectionViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		9F70DFFC299E909B008D97A9 /* Cells */ = {
@@ -230,7 +245,6 @@
 		9FA51274299E122500EE7049 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				9F56D227299F87CE009F798D /* Models */,
 				9F56D21F299F8734009F798D /* OffilceList */,
 				9F56D220299F8742009F798D /* LocationList */,
 				9FA51278299E12E100EE7049 /* LocationListViewController.swift */,
@@ -389,6 +403,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F56D22D299F8A52009F798D /* AppTabBarViewController.xib in Resources */,
+				9F56D232299F9C0E009F798D /* OfficeLocationCollectionViewCell.xib in Resources */,
 				9F56D224299F876E009F798D /* OfficeListViewController.xib in Resources */,
 				9FA5124F299E0DF000EE7049 /* LaunchScreen.storyboard in Resources */,
 				9FA5124C299E0DF000EE7049 /* Assets.xcassets in Resources */,
@@ -453,6 +468,7 @@
 				9FA5128A299E276600EE7049 /* RequestMethod.swift in Sources */,
 				9FA5127F299E19E400EE7049 /* ColorUtil.swift in Sources */,
 				9F56D22C299F8A52009F798D /* AppTabBarViewController.swift in Sources */,
+				9F56D231299F9C0E009F798D /* OfficeLocationCollectionViewCell.swift in Sources */,
 				9FA51243299E0DEE00EE7049 /* AppDelegate.swift in Sources */,
 				9FA51281299E1AF400EE7049 /* BaseViewController.swift in Sources */,
 				9FA51245299E0DEE00EE7049 /* SceneDelegate.swift in Sources */,
