@@ -14,6 +14,7 @@ enum HomeSection: CaseIterable {
     case paymentLocations
     case waterSupply
     case evCharging
+    case officeLocations
 }
 
 protocol LocationServiceable {

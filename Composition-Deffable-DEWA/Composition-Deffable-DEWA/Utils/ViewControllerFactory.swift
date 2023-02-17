@@ -13,6 +13,15 @@ struct ViewControllerFactory {
         vc.viewModel = LocationListViewModel(locationManager: CoreLocationManager())
         return vc
     }
+    
+    static func getOfficeListVC()-> OfficeListViewController {
+        let vc = OfficeListViewController(nibName: "OfficeListViewController", bundle: nil)
+        vc.viewModel = OfficeListViewModel()
+        return vc
+    }
+    
+    
+    
 }
 
 
