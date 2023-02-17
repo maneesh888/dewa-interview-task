@@ -92,6 +92,20 @@ class OfficeListViewController: BaseViewController {
                 self.addItems(items, in: .officeLocations)
             }
             .store(in: &subscriptions)
+        
+        if let tabbarViewModel = (self.tabBarController as? AppTabBarViewController)?.viewModel {
+            if viewModel.userLocation == nil {
+                viewModel.userLocation = tabbarViewModel.userLocation
+            }
+            tabbarViewModel.$userLocation
+                .dropFirst()
+                .receive(on: DispatchQueue.main)
+                .sink { [weak self] location in
+                    guard let self = self else { return }
+                    self.viewModel.userLocation = location
+                }
+                .store(in: &subscriptions)
+        }
     }
 
     private func loadData() {

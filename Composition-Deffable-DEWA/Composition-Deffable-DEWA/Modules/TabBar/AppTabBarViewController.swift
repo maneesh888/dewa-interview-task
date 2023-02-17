@@ -8,12 +8,13 @@
 import UIKit
 
 class AppTabBarViewController: UITabBarController {
-
+    
+    var viewModel: AppTabBarViewModel = AppTabBarViewModel(locationManager: CoreLocationManager())
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
         let locationsListVC = ViewControllerFactory.getLocationList()
         locationsListVC.tabBarItem = UITabBarItem(tabBarSystemItem: .topRated, tag: 0)
 
@@ -21,17 +22,8 @@ class AppTabBarViewController: UITabBarController {
             officeListVC.tabBarItem = UITabBarItem(tabBarSystemItem: .recents, tag: 1)
 
             viewControllers = [locationsListVC, officeListVC ]
+        
+        viewModel.requestForDeviceLocation()
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

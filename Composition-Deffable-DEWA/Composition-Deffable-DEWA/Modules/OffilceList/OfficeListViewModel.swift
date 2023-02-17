@@ -7,6 +7,7 @@
 
 import Foundation
 import Combine
+import CoreLocation
 
 
 protocol OfficeServiceable {
@@ -17,6 +18,13 @@ protocol OfficeServiceable {
 class OfficeListViewModel: HTTPClient, OfficeServiceable {
    @Published var officeLocations: [CordinateItem] = []
     var currentSections: [HomeSection] = [.officeLocations]
+    
+    var userLocation: CLLocation? {
+        didSet {
+            sort()
+        }
+    }
+    
     func getAllOffices() async {
         let result = await sendRequest(endpoint: LocationEndpoint.getAllOffice, responseModel: OfficeLocation.self)
         switch result {
@@ -27,5 +35,8 @@ class OfficeListViewModel: HTTPClient, OfficeServiceable {
         }
     }
 
+    func sort() {
+        
+    }
     
 }

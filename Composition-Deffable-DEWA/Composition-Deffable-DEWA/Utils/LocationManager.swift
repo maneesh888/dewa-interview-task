@@ -9,12 +9,7 @@ import Foundation
 import CoreLocation
 import Combine
 
-protocol LocationManager {
-    var currentLocation: CurrentValueSubject<CLLocation?, Never> { get }
-}
-
-
-class CoreLocationManager: NSObject, LocationManager, ObservableObject {
+class CoreLocationManager: NSObject, ObservableObject {
     
     private let locationManager = CLLocationManager()
     @Published var currentLocation = CurrentValueSubject<CLLocation?, Never>(nil)
@@ -23,10 +18,15 @@ class CoreLocationManager: NSObject, LocationManager, ObservableObject {
         super.init()
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestWhenInUseAuthorization()
     }
 
-    func requestLocationAuthorization() {
-        locationManager.requestWhenInUseAuthorization()
+    func startUpdatingLocation() {
+        locationManager.startUpdatingLocation()
+    }
+    
+    func stopUpdatingLocation() {
+        locationManager.stopUpdatingLocation()
     }
 }
 

@@ -26,15 +26,10 @@ protocol LocationServiceable {
 class LocationListViewModel: HTTPClient, LocationServiceable {
     
     @Published var customerServiceLocations: [CustomerServiceItem] = []
-    @Published var userLocation: CLLocation? {
+    var userLocation: CLLocation? {
         didSet {
             sort()
         }
-    }
-    
-    private let locationManager:CoreLocationManager
-    init(locationManager:CoreLocationManager) {
-        self.locationManager = locationManager
     }
     
     var currentSections: [HomeSection] = [.customerService]
@@ -46,20 +41,6 @@ class LocationListViewModel: HTTPClient, LocationServiceable {
         case .failure(let error):
             print(error)
         }
-    }
-    
-    func requestForDeviceLocation() {
-        locationManager.currentLocation
-                    .map { location in
-                        guard let location = location else {
-                            return nil
-                            
-                        }
-                        let coordinate = location
-                        return coordinate
-                    }
-                    .assign(to: &$userLocation)
-        locationManager.requestLocationAuthorization()
     }
 
     func sort() {

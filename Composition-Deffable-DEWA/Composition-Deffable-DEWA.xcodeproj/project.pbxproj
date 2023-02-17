@@ -14,6 +14,7 @@
 		9F56D22C299F8A52009F798D /* AppTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F56D22A299F8A52009F798D /* AppTabBarViewController.swift */; };
 		9F56D231299F9C0E009F798D /* OfficeLocationCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F56D22F299F9C0E009F798D /* OfficeLocationCollectionViewCell.swift */; };
 		9F56D232299F9C0E009F798D /* OfficeLocationCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F56D230299F9C0E009F798D /* OfficeLocationCollectionViewCell.xib */; };
+		9F56D235299FD16A009F798D /* AppTabbarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F56D234299FD16A009F798D /* AppTabbarViewModel.swift */; };
 		9F70DFFA299E9095008D97A9 /* CustomerServiceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F70DFF8299E9095008D97A9 /* CustomerServiceCollectionViewCell.swift */; };
 		9F70DFFB299E9095008D97A9 /* CustomerServiceCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F70DFF9299E9095008D97A9 /* CustomerServiceCollectionViewCell.xib */; };
 		9FA51243299E0DEE00EE7049 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA51242299E0DEE00EE7049 /* AppDelegate.swift */; };
@@ -65,6 +66,7 @@
 		9F56D22A299F8A52009F798D /* AppTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabBarViewController.swift; sourceTree = "<group>"; };
 		9F56D22F299F9C0E009F798D /* OfficeLocationCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficeLocationCollectionViewCell.swift; sourceTree = "<group>"; };
 		9F56D230299F9C0E009F798D /* OfficeLocationCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OfficeLocationCollectionViewCell.xib; sourceTree = "<group>"; };
+		9F56D234299FD16A009F798D /* AppTabbarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabbarViewModel.swift; sourceTree = "<group>"; };
 		9F70DFF8299E9095008D97A9 /* CustomerServiceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerServiceCollectionViewCell.swift; sourceTree = "<group>"; };
 		9F70DFF9299E9095008D97A9 /* CustomerServiceCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomerServiceCollectionViewCell.xib; sourceTree = "<group>"; };
 		9FA5123F299E0DEE00EE7049 /* Composition-Deffable-DEWA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Composition-Deffable-DEWA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				9F56D22A299F8A52009F798D /* AppTabBarViewController.swift */,
+				9F56D234299FD16A009F798D /* AppTabbarViewModel.swift */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -453,6 +456,7 @@
 			files = (
 				9F56D223299F876E009F798D /* OfficeListViewController.swift in Sources */,
 				9FA5127A299E12E100EE7049 /* LocationListViewController.swift in Sources */,
+				9F56D235299FD16A009F798D /* AppTabbarViewModel.swift in Sources */,
 				9FA5127D299E140400EE7049 /* LocationManager.swift in Sources */,
 				9F56D226299F87AA009F798D /* OfficeListViewModel.swift in Sources */,
 				9FA51287299E276600EE7049 /* HTTPClient.swift in Sources */,
