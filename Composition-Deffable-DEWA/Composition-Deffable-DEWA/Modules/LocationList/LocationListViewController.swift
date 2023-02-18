@@ -35,6 +35,7 @@ class LocationListViewController: BaseViewController, LocationReceiver {
     private func setCollectionView() {
         collectionView.setCollectionViewLayout(generateLayout(), animated: true)
         registerCells()
+        collectionView.delegate = self
     }
     private func registerCells() {
         collectionView.register(UINib(nibName: "CustomerServiceCollectionViewCell", bundle: nil),
@@ -109,5 +110,14 @@ class LocationListViewController: BaseViewController, LocationReceiver {
         snapshot.appendSections([section])
         snapshot.appendItems(items, toSection: section)
         dataSource.apply(snapshot, animatingDifferences: true)
+    }
+}
+
+extension LocationListViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+         let item = viewModel.customerServiceLocations[indexPath.item] 
+            let mapDetaisl = ViewControllerFactory.getMapDetails(item: item)
+            self.show(mapDetaisl, sender: nil)
+        
     }
 }

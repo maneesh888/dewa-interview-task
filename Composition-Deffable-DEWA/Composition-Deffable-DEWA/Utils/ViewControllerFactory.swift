@@ -25,6 +25,11 @@ struct ViewControllerFactory {
         return vc
     }
     
+    static func getMapDetails(item:Listable)-> MapDetailsViewController {
+        let vc = MapDetailsViewController(nibName: "MapDetailsViewController", bundle: nil)
+        vc.item = item
+        return vc
+    }
 }
 
 
