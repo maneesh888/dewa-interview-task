@@ -74,12 +74,6 @@ extension CustomerServiceItem: Listable {
     var addressValue: String {
         return address ?? ""
     }
-
-    var distance: String {
-        return "Distance not calculated"
-    }
-
-
 }
 
 // MARK: - Services

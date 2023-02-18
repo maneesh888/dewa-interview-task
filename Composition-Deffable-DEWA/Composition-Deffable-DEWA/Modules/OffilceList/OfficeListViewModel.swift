@@ -15,13 +15,13 @@ protocol OfficeServiceable {
 }
 
 
-class OfficeListViewModel: HTTPClient, OfficeServiceable {
+class OfficeListViewModel:NSObject, HTTPClient, OfficeServiceable {
    @Published var officeLocations: [CordinateItem] = []
     var currentSections: [HomeSection] = [.officeLocations]
     
     var userLocation: CLLocation? {
         didSet {
-            sort()
+            performSelector(inBackground: #selector(sort), with: nil)
         }
     }
     
@@ -30,13 +30,22 @@ class OfficeListViewModel: HTTPClient, OfficeServiceable {
         switch result {
         case .success(let location):
             officeLocations = location.getOfficeCoordinates()
+            sort()
         case .failure(let failure):
             print(failure.localizedDescription)
         }
     }
 
-    func sort() {
-        
+    @objc func sort() {
+        if let userLocation = userLocation {
+            officeLocations.sort { item0, item1 in
+                guard let loc0 = item0.location, let loc1 = item1.location else {
+                    return false
+                }
+                return loc0.distance(to: userLocation) < loc1.distance(to: userLocation)
+                
+            }
+        }
     }
     
 }

@@ -9,7 +9,7 @@ import UIKit
 
 class AppTabBarViewController: UITabBarController {
     
-    var viewModel: AppTabBarViewModel = AppTabBarViewModel(locationManager: CoreLocationManager())
+    var viewModel: AppTabBarViewModel = AppTabBarViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +24,12 @@ class AppTabBarViewController: UITabBarController {
             viewControllers = [locationsListVC, officeListVC ]
         
         viewModel.requestForDeviceLocation()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        viewModel.stopUpdatingLocation()
     }
 
 }

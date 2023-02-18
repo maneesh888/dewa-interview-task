@@ -8,7 +8,7 @@
 import UIKit
 import Combine
 
-class LocationListViewController: BaseViewController {
+class LocationListViewController: BaseViewController, LocationReceiver {
     
     var viewModel: LocationListViewModel!
     typealias DataSource = UICollectionViewDiffableDataSource<HomeSection, AnyHashable>
@@ -93,21 +93,15 @@ class LocationListViewController: BaseViewController {
             }
             .store(in: &subscriptions)
         
-        if let tabbarViewModel = (self.tabBarController as? AppTabBarViewController)?.viewModel {
-            
-            if viewModel.userLocation == nil {
-                viewModel.userLocation = tabbarViewModel.userLocation
-            }
-            
-            tabbarViewModel.$userLocation
-                .dropFirst()
-                .receive(on: DispatchQueue.main)
-                .sink { [weak self] location in
-                    guard let self = self else { return }
-                    self.viewModel.userLocation = location
-                }
-                .store(in: &subscriptions)
-        }
+        let locationObserver = self.receiveLocationUpdates()
+        locationObserver
+            .compactMap({$0})
+            .sink { [weak self] location in
+                guard let self = self else { return }
+                self.viewModel.userLocation = location
+                print("MM location ", location.coordinate)
+
+            }.store(in: &subscriptions)
     }
     
     private func addItems(_ items: [AnyHashable], in section: HomeSection) {

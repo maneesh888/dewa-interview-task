@@ -5,16 +5,41 @@
 //  Created by Maneesh M on 16/02/23.
 //
 
-import Foundation
+import UIKit
 import CoreLocation
 import Combine
+
+
+protocol LocationReceiver {
+//    var currentLocation: CurrentValueSubject<CLLocation?, Never> { get }
+    func receiveLocationUpdates() -> CurrentValueSubject<CLLocation?, Never>
+}
+
+extension LocationReceiver where Self: UIViewController {
+    func receiveLocationUpdates() -> CurrentValueSubject<CLLocation?, Never> {
+       let manager = CoreLocationManager.shared
+        CoreLocationManager.shared.startUpdatingLocation()
+        return manager.currentLocation
+    }
+    
+}
 
 class CoreLocationManager: NSObject, ObservableObject {
     
     private let locationManager = CLLocationManager()
+    
+    //Singleton Instance
+    static let shared: CoreLocationManager = {
+        let instance = CoreLocationManager()
+        // setup code
+        return instance
+    }()
+    
     @Published var currentLocation = CurrentValueSubject<CLLocation?, Never>(nil)
 
-    override init() {
+    
+    
+    private override init() {
         super.init()
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
@@ -40,4 +65,12 @@ extension CoreLocationManager: CLLocationManagerDelegate {
         print("Failed to retrieve user location: \(error.localizedDescription)")
     }
 }
+
+extension CLLocation {
+    func distance(to:CLLocation)-> Double {
+        let distanceInMeters = to.distance(from: self)
+        return distanceInMeters.magnitude
+    }
+}
+
 

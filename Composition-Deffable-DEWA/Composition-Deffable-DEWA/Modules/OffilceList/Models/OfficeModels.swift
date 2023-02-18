@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CoreLocation
 
 // MARK: - Welcome
 struct OfficeLocation: Codable {
@@ -52,6 +53,14 @@ struct CordinateItem: Codable, Hashable {
 }
 
 extension CordinateItem: Listable {
+    var latitude: Double? {
+        return Double(lat ?? "")
+    }
+    
+    var longitude: Double? {
+        return Double(lon ?? "")
+    }
+    
     var titleValue: String {
         return self.office ?? "-"
     }
@@ -59,14 +68,4 @@ extension CordinateItem: Listable {
     var addressValue: String {
         return ""
     }
-
-    var distance: String {
-        if let lat = self.lat, let lon = self.lon {
-            return "Lat: \(lat), Lon \(lon)"
-        }
-        return "-"
-
-    }
-
-
 }
