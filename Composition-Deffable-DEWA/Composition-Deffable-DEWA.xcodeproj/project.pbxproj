@@ -16,6 +16,7 @@
 		9F56D232299F9C0E009F798D /* OfficeLocationCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F56D230299F9C0E009F798D /* OfficeLocationCollectionViewCell.xib */; };
 		9F56D235299FD16A009F798D /* AppTabbarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F56D234299FD16A009F798D /* AppTabbarViewModel.swift */; };
 		9F56D237299FDF65009F798D /* dxb.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 9F56D236299FDF65009F798D /* dxb.gpx */; };
+		9F69BD0C29A0B64000A9692B /* burj khalifa.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 9F69BD0B29A0B64000A9692B /* burj khalifa.gpx */; };
 		9F70DFFA299E9095008D97A9 /* CustomerServiceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F70DFF8299E9095008D97A9 /* CustomerServiceCollectionViewCell.swift */; };
 		9F70DFFB299E9095008D97A9 /* CustomerServiceCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F70DFF9299E9095008D97A9 /* CustomerServiceCollectionViewCell.xib */; };
 		9FA51243299E0DEE00EE7049 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA51242299E0DEE00EE7049 /* AppDelegate.swift */; };
@@ -69,6 +70,7 @@
 		9F56D230299F9C0E009F798D /* OfficeLocationCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OfficeLocationCollectionViewCell.xib; sourceTree = "<group>"; };
 		9F56D234299FD16A009F798D /* AppTabbarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabbarViewModel.swift; sourceTree = "<group>"; };
 		9F56D236299FDF65009F798D /* dxb.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = dxb.gpx; sourceTree = "<group>"; };
+		9F69BD0B29A0B64000A9692B /* burj khalifa.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "burj khalifa.gpx"; sourceTree = "<group>"; };
 		9F70DFF8299E9095008D97A9 /* CustomerServiceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerServiceCollectionViewCell.swift; sourceTree = "<group>"; };
 		9F70DFF9299E9095008D97A9 /* CustomerServiceCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomerServiceCollectionViewCell.xib; sourceTree = "<group>"; };
 		9FA5123F299E0DEE00EE7049 /* Composition-Deffable-DEWA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Composition-Deffable-DEWA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -207,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				9F56D236299FDF65009F798D /* dxb.gpx */,
+				9F69BD0B29A0B64000A9692B /* burj khalifa.gpx */,
 				9FA51275299E122E00EE7049 /* Base */,
 				9FA51274299E122500EE7049 /* Modules */,
 				9FA51273299E121800EE7049 /* Utils */,
@@ -409,6 +412,7 @@
 				9F56D224299F876E009F798D /* OfficeListViewController.xib in Resources */,
 				9F56D237299FDF65009F798D /* dxb.gpx in Resources */,
 				9FA5124F299E0DF000EE7049 /* LaunchScreen.storyboard in Resources */,
+				9F69BD0C29A0B64000A9692B /* burj khalifa.gpx in Resources */,
 				9FA5124C299E0DF000EE7049 /* Assets.xcassets in Resources */,
 				9FA5124A299E0DEE00EE7049 /* Main.storyboard in Resources */,
 				9F70DFFB299E9095008D97A9 /* CustomerServiceCollectionViewCell.xib in Resources */,

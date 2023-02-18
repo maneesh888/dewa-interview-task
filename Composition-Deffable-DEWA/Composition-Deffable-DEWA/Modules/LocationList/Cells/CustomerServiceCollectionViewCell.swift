@@ -27,8 +27,6 @@ extension Listable {
         guard let userLocation = CoreLocationManager.shared.currentLocation.value, let entityLocation = self.location else {return "-"}
         
         let distanceInKM = userLocation.distance(to: entityLocation).rounded()/1000
-        
-        
         return "\(distanceInKM) KM"
 
     }
