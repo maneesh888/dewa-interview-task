@@ -42,6 +42,7 @@ class OfficeListViewController: BaseViewController, LocationReceiver {
             guard let officeCell = cell as? OfficeLocationCollectionViewCell else { return cell }
             if let listableItem = itemIdentifier as? Listable {
                 officeCell.item = listableItem
+                officeCell.contentView.backgroundColor = ColorUtil.cellColor
             }
             return officeCell
         })
