@@ -19,6 +19,7 @@
 		9F69BD0C29A0B64000A9692B /* burj khalifa.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 9F69BD0B29A0B64000A9692B /* burj khalifa.gpx */; };
 		9F69BD0F29A0BAAE00A9692B /* MapDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F69BD0D29A0BAAE00A9692B /* MapDetailsViewController.swift */; };
 		9F69BD1029A0BAAE00A9692B /* MapDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F69BD0E29A0BAAE00A9692B /* MapDetailsViewController.xib */; };
+		9F69BD1429A0EFC200A9692B /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 9F69BD1329A0EFC200A9692B /* SDWebImage */; };
 		9F70DFFA299E9095008D97A9 /* CustomerServiceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F70DFF8299E9095008D97A9 /* CustomerServiceCollectionViewCell.swift */; };
 		9F70DFFB299E9095008D97A9 /* CustomerServiceCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F70DFF9299E9095008D97A9 /* CustomerServiceCollectionViewCell.xib */; };
 		9FA51243299E0DEE00EE7049 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA51242299E0DEE00EE7049 /* AppDelegate.swift */; };
@@ -109,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F69BD1429A0EFC200A9692B /* SDWebImage in Frameworks */,
 				9FA51290299E284A00EE7049 /* XMLParsing in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -330,6 +332,7 @@
 			name = "Composition-Deffable-DEWA";
 			packageProductDependencies = (
 				9FA5128F299E284A00EE7049 /* XMLParsing */,
+				9F69BD1329A0EFC200A9692B /* SDWebImage */,
 			);
 			productName = "Composition-Deffable-DEWA";
 			productReference = 9FA5123F299E0DEE00EE7049 /* Composition-Deffable-DEWA.app */;
@@ -405,6 +408,7 @@
 			mainGroup = 9FA51236299E0DEE00EE7049;
 			packageReferences = (
 				9FA5128E299E284A00EE7049 /* XCRemoteSwiftPackageReference "XMLParsing" */,
+				9F69BD1229A0EFC200A9692B /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			productRefGroup = 9FA51240299E0DEE00EE7049 /* Products */;
 			projectDirPath = "";
@@ -838,6 +842,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		9F69BD1229A0EFC200A9692B /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		9FA5128E299E284A00EE7049 /* XCRemoteSwiftPackageReference "XMLParsing" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ShawnMoore/XMLParsing";
@@ -849,6 +861,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		9F69BD1329A0EFC200A9692B /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9F69BD1229A0EFC200A9692B /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
 		9FA5128F299E284A00EE7049 /* XMLParsing */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 9FA5128E299E284A00EE7049 /* XCRemoteSwiftPackageReference "XMLParsing" */;

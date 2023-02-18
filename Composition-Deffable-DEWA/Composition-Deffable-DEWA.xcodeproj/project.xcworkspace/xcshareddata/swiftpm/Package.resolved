@@ -1,6 +1,15 @@
 {
   "pins" : [
     {
+      "identity" : "sdwebimage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SDWebImage/SDWebImage",
+      "state" : {
+        "revision" : "7ccdcb02fb0ab47409a6602769cea0486be2a209",
+        "version" : "5.15.2"
+      }
+    },
+    {
       "identity" : "xmlparsing",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ShawnMoore/XMLParsing",

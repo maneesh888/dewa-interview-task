@@ -32,6 +32,7 @@ class OfficeListViewController: BaseViewController, LocationReceiver {
     private func setCollectionView() {
         collectionView.setCollectionViewLayout(generateLayout(), animated: true)
         registerCells()
+        collectionView.delegate = self
     }
 
     private func createDataSource() {
@@ -111,4 +112,13 @@ class OfficeListViewController: BaseViewController, LocationReceiver {
     }
 
 
+}
+
+extension OfficeListViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+         let item = viewModel.officeLocations[indexPath.item]
+            let mapDetaisl = ViewControllerFactory.getMapDetails(item: item)
+            self.show(mapDetaisl, sender: nil)
+        
+    }
 }
