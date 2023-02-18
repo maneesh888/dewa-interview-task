@@ -7,3 +7,6 @@
 
 import UIKit
 
+struct ColorUtil {
+    static var cellColor = UIColor(named: "cellColor")
+}
