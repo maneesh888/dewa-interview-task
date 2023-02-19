@@ -35,6 +35,9 @@ class CoreLocationManager: NSObject, ObservableObject {
         return instance
     }()
     
+    var locationAccuracy = kCLLocationAccuracyHundredMeters
+    var updateOnlyIfDifference:Double = 100.0 // meters
+    private var lastLocation:CLLocation?
     @Published var currentLocation = CurrentValueSubject<CLLocation?, Never>(nil)
 
     
@@ -42,7 +45,7 @@ class CoreLocationManager: NSObject, ObservableObject {
     private override init() {
         super.init()
         locationManager.delegate = self
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.desiredAccuracy = locationAccuracy
         locationManager.requestWhenInUseAuthorization()
     }
 
@@ -57,8 +60,30 @@ class CoreLocationManager: NSObject, ObservableObject {
 
 extension CoreLocationManager: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        
         guard let location = locations.last else { return }
-        currentLocation.value = location
+        
+        
+        let locationAge = -(location.timestamp.timeIntervalSinceNow)
+        if (locationAge > 5.0) {
+            print("old location \(location)")
+            return
+        }
+        if location.horizontalAccuracy < 0 {
+            self.locationManager.stopUpdatingLocation()
+            self.locationManager.startUpdatingLocation()
+            return
+        }
+        
+        if let lastLocation = lastLocation {
+           if lastLocation.distance(to: location) > updateOnlyIfDifference {
+                currentLocation.value = location
+            }
+            
+        }else{
+            currentLocation.value = location
+        }
+        lastLocation = location
     }
 
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
