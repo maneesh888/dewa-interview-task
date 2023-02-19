@@ -149,6 +149,16 @@ class MapDetailsViewController: UIViewController, MKMapViewDelegate {
             }
         }
     }
+    
+    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+        if let coordinate = coordinate {
+            // Open Google Maps to show directions to the marker location
+            let urlString = "comgooglemaps://?daddr=\(coordinate.latitude),\(coordinate.longitude)&directionsmode=driving"
+            if let url = URL(string: urlString) {
+                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            }
+        }
+    }
 }
 
 extension String? {
