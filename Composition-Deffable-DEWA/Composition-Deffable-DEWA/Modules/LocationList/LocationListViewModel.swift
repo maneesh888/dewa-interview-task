@@ -46,13 +46,16 @@ class LocationListViewModel: NSObject, HTTPClient, LocationServiceable {
 
     @objc func sort() {
         if let userLocation = userLocation {
-            customerServiceLocations.sort { item0, item1 in
+            
+            let sorted = customerServiceLocations.sorted { item0, item1 in
                 guard let loc0 = item0.location, let loc1 = item1.location else {
                     return false
                 }
                 return loc0.distance(to: userLocation) < loc1.distance(to: userLocation)
                 
             }
+            customerServiceLocations = [] // TODO: - Need to find a better solution to avoid rendering collection view 3 times instead of two
+            customerServiceLocations = sorted
         }
     }
 

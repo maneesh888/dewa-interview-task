@@ -38,13 +38,16 @@ class OfficeListViewModel:NSObject, HTTPClient, OfficeServiceable {
 
     @objc func sort() {
         if let userLocation = userLocation {
-            officeLocations.sort { item0, item1 in
+            
+            let sorted = officeLocations.sorted { item0, item1 in
                 guard let loc0 = item0.location, let loc1 = item1.location else {
                     return false
                 }
                 return loc0.distance(to: userLocation) < loc1.distance(to: userLocation)
                 
             }
+            officeLocations = [] // TODO: - Need to find a better solution to avoid rendering collection view 3 times instead of two
+            officeLocations = sorted
         }
     }
     
