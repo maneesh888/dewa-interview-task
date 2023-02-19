@@ -63,7 +63,7 @@ class OfficeListViewController: BaseViewController, LocationReceiver {
     private func generateLayout() -> UICollectionViewLayout {
         let layout = UICollectionViewCompositionalLayout { [weak self] (section, _) -> NSCollectionLayoutSection? in
             guard let self = self else { return nil }
-            let section = self.viewModel.currentSections[section]
+            let _ = self.viewModel.currentSections[section]
             // create different layouts for different sections
             return self.listLayout()
         }
