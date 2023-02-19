@@ -78,16 +78,16 @@
 		9F69BD0E29A0BAAE00A9692B /* MapDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapDetailsViewController.xib; sourceTree = "<group>"; };
 		9F70DFF8299E9095008D97A9 /* CustomerServiceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerServiceCollectionViewCell.swift; sourceTree = "<group>"; };
 		9F70DFF9299E9095008D97A9 /* CustomerServiceCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomerServiceCollectionViewCell.xib; sourceTree = "<group>"; };
-		9FA5123F299E0DEE00EE7049 /* Composition-Deffable-DEWA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Composition-Deffable-DEWA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FA5123F299E0DEE00EE7049 /* Compositional-Diffable-DEWA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Compositional-Diffable-DEWA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FA51242299E0DEE00EE7049 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FA51244299E0DEE00EE7049 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9FA51249299E0DEE00EE7049 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9FA5124B299E0DF000EE7049 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FA5124E299E0DF000EE7049 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9FA51250299E0DF000EE7049 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9FA51255299E0DF100EE7049 /* Composition-Deffable-DEWATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Composition-Deffable-DEWATests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FA51255299E0DF100EE7049 /* Compositional-Diffable-DEWATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Compositional-Diffable-DEWATests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FA51259299E0DF100EE7049 /* Composition_Deffable_DEWATests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Composition_Deffable_DEWATests.swift; sourceTree = "<group>"; };
-		9FA5125F299E0DF100EE7049 /* Composition-Deffable-DEWAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Composition-Deffable-DEWAUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FA5125F299E0DF100EE7049 /* Compositional-Diffable-DEWAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Compositional-Diffable-DEWAUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FA51263299E0DF100EE7049 /* Composition_Deffable_DEWAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Composition_Deffable_DEWAUITests.swift; sourceTree = "<group>"; };
 		9FA51265299E0DF100EE7049 /* Composition_Deffable_DEWAUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Composition_Deffable_DEWAUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9FA51276299E129100EE7049 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
@@ -213,9 +213,9 @@
 		9FA51240299E0DEE00EE7049 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9FA5123F299E0DEE00EE7049 /* Composition-Deffable-DEWA.app */,
-				9FA51255299E0DF100EE7049 /* Composition-Deffable-DEWATests.xctest */,
-				9FA5125F299E0DF100EE7049 /* Composition-Deffable-DEWAUITests.xctest */,
+				9FA5123F299E0DEE00EE7049 /* Compositional-Diffable-DEWA.app */,
+				9FA51255299E0DF100EE7049 /* Compositional-Diffable-DEWATests.xctest */,
+				9FA5125F299E0DF100EE7049 /* Compositional-Diffable-DEWAUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -316,9 +316,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9FA5123E299E0DEE00EE7049 /* Composition-Deffable-DEWA */ = {
+		9FA5123E299E0DEE00EE7049 /* Compositional-Diffable-DEWA */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9FA51269299E0DF100EE7049 /* Build configuration list for PBXNativeTarget "Composition-Deffable-DEWA" */;
+			buildConfigurationList = 9FA51269299E0DF100EE7049 /* Build configuration list for PBXNativeTarget "Compositional-Diffable-DEWA" */;
 			buildPhases = (
 				9FA5123B299E0DEE00EE7049 /* Sources */,
 				9FA5123C299E0DEE00EE7049 /* Frameworks */,
@@ -329,18 +329,18 @@
 			);
 			dependencies = (
 			);
-			name = "Composition-Deffable-DEWA";
+			name = "Compositional-Diffable-DEWA";
 			packageProductDependencies = (
 				9FA5128F299E284A00EE7049 /* XMLParsing */,
 				9F69BD1329A0EFC200A9692B /* SDWebImage */,
 			);
 			productName = "Composition-Deffable-DEWA";
-			productReference = 9FA5123F299E0DEE00EE7049 /* Composition-Deffable-DEWA.app */;
+			productReference = 9FA5123F299E0DEE00EE7049 /* Compositional-Diffable-DEWA.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9FA51254299E0DF100EE7049 /* Composition-Deffable-DEWATests */ = {
+		9FA51254299E0DF100EE7049 /* Compositional-Diffable-DEWATests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9FA5126C299E0DF100EE7049 /* Build configuration list for PBXNativeTarget "Composition-Deffable-DEWATests" */;
+			buildConfigurationList = 9FA5126C299E0DF100EE7049 /* Build configuration list for PBXNativeTarget "Compositional-Diffable-DEWATests" */;
 			buildPhases = (
 				9FA51251299E0DF100EE7049 /* Sources */,
 				9FA51252299E0DF100EE7049 /* Frameworks */,
@@ -351,14 +351,14 @@
 			dependencies = (
 				9FA51257299E0DF100EE7049 /* PBXTargetDependency */,
 			);
-			name = "Composition-Deffable-DEWATests";
+			name = "Compositional-Diffable-DEWATests";
 			productName = "Composition-Deffable-DEWATests";
-			productReference = 9FA51255299E0DF100EE7049 /* Composition-Deffable-DEWATests.xctest */;
+			productReference = 9FA51255299E0DF100EE7049 /* Compositional-Diffable-DEWATests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		9FA5125E299E0DF100EE7049 /* Composition-Deffable-DEWAUITests */ = {
+		9FA5125E299E0DF100EE7049 /* Compositional-Diffable-DEWAUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9FA5126F299E0DF100EE7049 /* Build configuration list for PBXNativeTarget "Composition-Deffable-DEWAUITests" */;
+			buildConfigurationList = 9FA5126F299E0DF100EE7049 /* Build configuration list for PBXNativeTarget "Compositional-Diffable-DEWAUITests" */;
 			buildPhases = (
 				9FA5125B299E0DF100EE7049 /* Sources */,
 				9FA5125C299E0DF100EE7049 /* Frameworks */,
@@ -369,9 +369,9 @@
 			dependencies = (
 				9FA51261299E0DF100EE7049 /* PBXTargetDependency */,
 			);
-			name = "Composition-Deffable-DEWAUITests";
+			name = "Compositional-Diffable-DEWAUITests";
 			productName = "Composition-Deffable-DEWAUITests";
-			productReference = 9FA5125F299E0DF100EE7049 /* Composition-Deffable-DEWAUITests.xctest */;
+			productReference = 9FA5125F299E0DF100EE7049 /* Compositional-Diffable-DEWAUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -397,7 +397,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9FA5123A299E0DEE00EE7049 /* Build configuration list for PBXProject "Composition-Deffable-DEWA" */;
+			buildConfigurationList = 9FA5123A299E0DEE00EE7049 /* Build configuration list for PBXProject "Compositional-Diffable-DEWA" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -414,9 +414,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9FA5123E299E0DEE00EE7049 /* Composition-Deffable-DEWA */,
-				9FA51254299E0DF100EE7049 /* Composition-Deffable-DEWATests */,
-				9FA5125E299E0DF100EE7049 /* Composition-Deffable-DEWAUITests */,
+				9FA5123E299E0DEE00EE7049 /* Compositional-Diffable-DEWA */,
+				9FA51254299E0DF100EE7049 /* Compositional-Diffable-DEWATests */,
+				9FA5125E299E0DF100EE7049 /* Compositional-Diffable-DEWAUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -528,12 +528,12 @@
 /* Begin PBXTargetDependency section */
 		9FA51257299E0DF100EE7049 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9FA5123E299E0DEE00EE7049 /* Composition-Deffable-DEWA */;
+			target = 9FA5123E299E0DEE00EE7049 /* Compositional-Diffable-DEWA */;
 			targetProxy = 9FA51256299E0DF100EE7049 /* PBXContainerItemProxy */;
 		};
 		9FA51261299E0DF100EE7049 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9FA5123E299E0DEE00EE7049 /* Composition-Deffable-DEWA */;
+			target = 9FA5123E299E0DEE00EE7049 /* Compositional-Diffable-DEWA */;
 			targetProxy = 9FA51260299E0DF100EE7049 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -803,7 +803,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9FA5123A299E0DEE00EE7049 /* Build configuration list for PBXProject "Composition-Deffable-DEWA" */ = {
+		9FA5123A299E0DEE00EE7049 /* Build configuration list for PBXProject "Compositional-Diffable-DEWA" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9FA51267299E0DF100EE7049 /* Debug */,
@@ -812,7 +812,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9FA51269299E0DF100EE7049 /* Build configuration list for PBXNativeTarget "Composition-Deffable-DEWA" */ = {
+		9FA51269299E0DF100EE7049 /* Build configuration list for PBXNativeTarget "Compositional-Diffable-DEWA" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9FA5126A299E0DF100EE7049 /* Debug */,
@@ -821,7 +821,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9FA5126C299E0DF100EE7049 /* Build configuration list for PBXNativeTarget "Composition-Deffable-DEWATests" */ = {
+		9FA5126C299E0DF100EE7049 /* Build configuration list for PBXNativeTarget "Compositional-Diffable-DEWATests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9FA5126D299E0DF100EE7049 /* Debug */,
@@ -830,7 +830,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9FA5126F299E0DF100EE7049 /* Build configuration list for PBXNativeTarget "Composition-Deffable-DEWAUITests" */ = {
+		9FA5126F299E0DF100EE7049 /* Build configuration list for PBXNativeTarget "Compositional-Diffable-DEWAUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9FA51270299E0DF100EE7049 /* Debug */,
